@@ -1,6 +1,92 @@
+@import "./variables";
+
 .container {
     header {
         display: flex;
-        background-color: #2c3e50;
+        background-color: $header-color;
+        height: 100px;
+        .logo {
+            text-align: center;
+            margin: auto;
+            flex: 1;
+            font-size: 1.75em;
+            display: block;
+            margin: auto;
+            a {
+                text-decoration: none;
+                color: $white;
+                font-size: 28px;
+            }
+        }
+        .nav {
+            flex: 1;
+            text-align: center;
+            nav {
+                ul {
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        padding: 10px;
+                        margin: 30px auto;
+                        text-align: center;
+                        a {
+                            text-decoration: none;
+                            display: block;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .extend-header {
+        background-color: $exten-color;
+        .principal {
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            .subtitulo {
+                margin-bottom: 100px;
+                text-align: center;
+                color: $white;
+                font-size: 24px;
+                font-family: 'Lato', sans-serif;
+            }
+            h1 {
+                font-size: 64px;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                display: block;
+                margin: 100px auto 36px;
+            }
+            .titulo-principal {
+                font-size: 4rem;
+                text-align: center;
+                color: $white;
+            }
+            .divisor {
+                display: flex;
+                width: 100%;
+                margin: 30px auto;
+                justify-content: center;
+                align-items: center;
+                .estrella {
+                    display: inline;
+                    font-size: 37px;
+                    color: $white;
+                }
+                .vacio {
+                    width: 112px;
+                    background-color: $white;
+                    height: 4px;
+                    border-radius: 2px;
+                    margin: 0 10px;
+
+                }
+            }
+        }
     }
 }

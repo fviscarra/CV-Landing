@@ -1,6 +1,18 @@
-.container header {
-  display: flex;
-  background-color: #2c3e50;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 43 |         background-color: $exten-color;
+ *    |                           ^^^^^^^^^^^^
+ *    '
+ *   scss\header.scss 43:27  @import
+ *   scss\style.scss 1:9     root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 43 \2502          background-color: $exten-color;\d\a    \2502                            ^^^^^^^^^^^^\a    \2575 \a   scss\\header.scss 43:27  @import\a   scss\\style.scss 1:9     root stylesheet";
+}
