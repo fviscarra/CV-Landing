@@ -1,10 +1,13 @@
 @import "./variables";
+@import "./responsive.scss";
 
 .container {
     header {
         display: flex;
         background-color: $header-color;
         height: 100px;
+        position: fixed;
+        width: 100%;
         .logo {
             text-align: center;
             margin: auto;
@@ -12,7 +15,6 @@
             font-size: 1.75em;
             display: block;
             margin: auto;
-            
             a { 
                 text-decoration: none;
                 color: $white;
@@ -25,7 +27,6 @@
             nav {
                 ul {
                     li {
-                        list-style: none;
                         display: inline-block;
                         padding: 10px;
                         margin: 30px auto;
@@ -36,12 +37,29 @@
                             color: $white;
                         }
                     }
+                    .button-hamburguesa {
+                        display: none;
+                        position: absolute;
+                        right: 0;
+                        bottom: 20%;
+                        margin-right: 24px;
+                        width: 85px;
+                        height: 42px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: $extend-color;
+                        small {
+                            font-size: 12.8px;
+                            font-family: $montserrat;
+                            color: $white;
+                        }
+                    }
                 }
             }
         }
     }
     .extend-header {
-        background-color: $exten-color;
+        background-color: $extend-color; 
         .principal {
             width: 80%;
             margin: auto;
@@ -51,7 +69,7 @@
                 text-align: center;
                 color: $white;
                 font-size: 24px;
-                font-family: 'Lato', sans-serif;
+                font-family: $lato;
             }
             h1 {
                 font-size: 64px;
@@ -68,26 +86,9 @@
                 text-align: center;
                 color: $white;
             }
-            .divisor {
-                display: flex;
-                width: 100%;
-                margin: 30px auto;
-                justify-content: center;
-                align-items: center;
-                .estrella {
-                    display: inline;
-                    font-size: 37px;
-                    color: $white;
-                }
-                .vacio {
-                    width: 112px;
-                    background-color: $white;
-                    height: 4px;
-                    border-radius: 2px;
-                    margin: 0 10px;
-
-                }
-            }
+            @include divisorBlanco
         }
     }
+
 }
+

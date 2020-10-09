@@ -1,4 +1,56 @@
 $white: white;
 $header-color: #2c3e50;
-$exten-color: #1abc9c; 
- 
+$extend-color: #1abc9c; 
+$roboto: 'Roboto', sans-serif;
+$lato: 'Lato', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$black: black;
+$footer-color: #1a252f;
+$table: 768px;
+$Table: 991px;
+
+@mixin divisorNegro {
+    .divisor {
+        display: flex;
+        width: 100%;
+        margin: 30px auto;
+        justify-content: center;
+        align-items: center;
+        .estrella {
+            display: inline;
+            font-size: 37px;
+            color: $header-color;
+        }
+        .vacio {
+            width: 112px;
+            background-color: $header-color;
+            height: 4px;
+            border-radius: 2px;
+            margin: 0 10px;
+    
+        }
+    }
+}
+
+@mixin divisorBlanco {
+    .divisor {
+        display: flex;
+        width: 100%;
+        margin: 30px auto;
+        justify-content: center;
+        align-items: center;
+        .estrella {
+            display: inline;
+            font-size: 37px;
+            color: $white;
+        }
+        .vacio {
+            width: 112px;
+            background-color: $white;
+            height: 4px;
+            border-radius: 2px;
+            margin: 0 10px;
+    
+        }
+    }
+}

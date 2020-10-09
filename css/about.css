@@ -1,0 +1,56 @@
+.container .about {
+  background: #1abc9c;
+  margin: auto;
+  width: 100%;
+  padding: 0 1.5rem; }
+  .container .about .headerAbout {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 100px; }
+    .container .about .headerAbout .divisor {
+      display: flex;
+      width: 100%;
+      margin: 30px auto;
+      justify-content: center;
+      align-items: center; }
+      .container .about .headerAbout .divisor .estrella {
+        display: inline;
+        font-size: 37px;
+        color: white; }
+      .container .about .headerAbout .divisor .vacio {
+        width: 112px;
+        background-color: white;
+        height: 4px;
+        border-radius: 2px;
+        margin: 0 10px; }
+    .container .about .headerAbout .h2About {
+      font-size: 3rem; }
+  .container .about .containerAbout {
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Lato", sans-serif;
+    font-size: 1.25rem; }
+    .container .about .containerAbout .p {
+      margin: 0 0 0 180px;
+      padding: 0 24px;
+      flex: 0 0 33.33333333%; }
+    .container .about .containerAbout .p1 {
+      margin: 0 160px 0 0; }
+  .container .about .boton {
+    text-align: center;
+    padding: 70px 0 120px;
+    background: #1abc9c; }
+    .container .about .boton .button-about {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family: "Lato", sans-serif;
+      padding: 16px 28px;
+      border: 2px solid white;
+      border-radius: 7px; }
+      .container .about .boton .button-about .fas {
+        padding-right: 10px; }
