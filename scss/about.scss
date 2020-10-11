@@ -1,0 +1,54 @@
+@import "./variables";
+
+.container {
+    .about {
+        background: $extend-color;
+        margin: auto; 
+        width: 100%;
+        padding: 0 1.5rem;
+        .headerAbout {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            color: $white;
+            @include divisorBlanco;
+            padding-top: 100px;
+            .h2About {
+                font-size: 3rem;
+            }
+        }
+        .containerAbout {
+            color: $white;
+            margin: auto;
+            display: flex;    
+            flex-wrap: wrap;  
+            font-family: $lato;
+            font-size: 1.25rem;
+            .p {
+                margin: 0 0 0 180px; 
+                padding: 0 24px;
+                flex: 0 0 33.33333333%;
+            }
+            .p1 {
+                margin: 0 160px 0 0;
+            }
+        }
+        .boton {
+            text-align: center;
+            padding: 70px 0 120px;
+            background: $extend-color;
+            .button-about {
+                text-decoration: none;
+                color: $white;
+                font-size: 20px;
+                font-family: $lato;
+                padding: 16px 28px;
+                border: 2px solid $white;
+                border-radius: 7px;
+                .fas {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

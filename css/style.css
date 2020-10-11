@@ -1,7 +1,80 @@
+@media screen and (max-width: 991px) {
+  .container header {
+    height: 74px; }
+    .container header .logo {
+      padding-left: 94px;
+      text-align: start; }
+      .container header .logo a {
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif; }
+    .container header .nav nav ul li {
+      display: none; }
+    .container header .nav nav ul .button-hamburguesa {
+      display: block;
+      margin-right: 94px; }
+  .container .extend-header .principal .titulo-principal {
+    font-size: 44px; }
+  .container .extend-header .principal .subtitulo {
+    font-size: 22px; }
+  .container .main .containerMain .portfolio .h2Portfolio {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif; }
+  .container .main .containerMain .container-row-main {
+    width: 87%;
+    margin: auto; }
+    .container .main .containerMain .container-row-main .image {
+      flex: 50%; }
+  .container .about .headerAbout .h2About {
+    font-size: 36px; }
+  .container .about .containerAbout {
+    width: 76%;
+    margin: auto; }
+    .container .about .containerAbout .p, .container .about .containerAbout .p1 {
+      flex: 100%;
+      margin: 0 0 16px;
+      padding: 0 24px; }
+  .container .contact .container-contact .h2-contact {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif; }
+  .container .contact .container-contact .form-contact {
+    width: 81%;
+    margin: auto; }
+    .container .contact .container-contact .form-contact form .input-form input {
+      font-family: "Lato", sans-serif; }
+  .container .footer .cont-footer {
+    display: block; }
+    .container .footer .cont-footer .location, .container .footer .cont-footer .about-footer, .container .footer .cont-footer .around {
+      width: 80%;
+      margin: 0 auto 48px; } }
+
+@media screen and (max-width: 768px) {
+  .container header {
+    height: 74px; }
+    .container header .logo {
+      padding-left: 94px;
+      text-align: start; }
+      .container header .logo a {
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif; }
+    .container header .nav nav ul li {
+      display: none; }
+    .container header .nav nav ul .button-hamburguesa {
+      display: block;
+      margin-right: 94px; }
+  .container .main .containerMain {
+    width: 67%;
+    margin: auto; }
+    .container .main .containerMain .portfolio .h2Portfolio {
+      font-size: 36px; }
+    .container .main .containerMain .container-row-main .image {
+      flex: 100%; } }
+
 .container header {
   display: flex;
   background-color: #2c3e50;
-  height: 100px; }
+  height: 100px;
+  position: fixed;
+  width: 100%; }
   .container header .logo {
     text-align: center;
     margin: auto;
@@ -17,7 +90,6 @@
     flex: 1;
     text-align: center; }
     .container header .nav nav ul li {
-      list-style: none;
       display: inline-block;
       padding: 10px;
       margin: 30px auto;
@@ -25,6 +97,21 @@
       .container header .nav nav ul li a {
         text-decoration: none;
         display: block;
+        color: white; }
+    .container header .nav nav ul .button-hamburguesa {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 20%;
+      margin-right: 24px;
+      width: 85px;
+      height: 42px;
+      border: none;
+      border-radius: 8px;
+      background-color: #1abc9c; }
+      .container header .nav nav ul .button-hamburguesa small {
+        font-size: 12.8px;
+        font-family: "Montserrat", sans-serif;
         color: white; }
 
 .container .extend-header {
@@ -38,7 +125,7 @@
       text-align: center;
       color: white;
       font-size: 24px;
-      font-family: 'Lato', sans-serif; }
+      font-family: "Lato", sans-serif; }
     .container .extend-header .principal h1 {
       font-size: 64px; }
     .container .extend-header .principal img {
@@ -75,3 +162,287 @@
 
 .container {
   font-family: 'Montserrat', sans-serif; }
+  .container p {
+    line-height: 1.5; }
+
+.container .main {
+  margin: 100px auto; }
+  .container .main .containerMain {
+    margin: 0 74px; }
+    .container .main .containerMain .portfolio .h2Portfolio {
+      text-align: center;
+      font-family: "Lato", sans-serif;
+      font-size: 3rem;
+      color: #2c3e50; }
+    .container .main .containerMain .portfolio .divisor {
+      display: flex;
+      width: 100%;
+      margin: 30px auto;
+      justify-content: center;
+      align-items: center; }
+      .container .main .containerMain .portfolio .divisor .estrella {
+        display: inline;
+        font-size: 37px;
+        color: #2c3e50; }
+      .container .main .containerMain .portfolio .divisor .vacio {
+        width: 112px;
+        background-color: #2c3e50;
+        height: 4px;
+        border-radius: 2px;
+        margin: 0 10px; }
+    .container .main .containerMain .container-row-main {
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%; }
+      .container .main .containerMain .container-row-main .image {
+        flex: 33%;
+        margin-bottom: 48px;
+        padding: 0 24px;
+        box-sizing: border-box; }
+        .container .main .containerMain .container-row-main .image .imagenes {
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          border-radius: 10px; }
+
+.container .about {
+  background: #1abc9c;
+  margin: auto;
+  width: 100%;
+  padding: 0 1.5rem; }
+  .container .about .headerAbout {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-top: 100px; }
+    .container .about .headerAbout .divisor {
+      display: flex;
+      width: 100%;
+      margin: 30px auto;
+      justify-content: center;
+      align-items: center; }
+      .container .about .headerAbout .divisor .estrella {
+        display: inline;
+        font-size: 37px;
+        color: white; }
+      .container .about .headerAbout .divisor .vacio {
+        width: 112px;
+        background-color: white;
+        height: 4px;
+        border-radius: 2px;
+        margin: 0 10px; }
+    .container .about .headerAbout .h2About {
+      font-size: 3rem; }
+  .container .about .containerAbout {
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Lato", sans-serif;
+    font-size: 1.25rem; }
+    .container .about .containerAbout .p {
+      margin: 0 0 0 180px;
+      padding: 0 24px;
+      flex: 0 0 33.33333333%; }
+    .container .about .containerAbout .p1 {
+      margin: 0 160px 0 0; }
+  .container .about .boton {
+    text-align: center;
+    padding: 70px 0 120px;
+    background: #1abc9c; }
+    .container .about .boton .button-about {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-family: "Lato", sans-serif;
+      padding: 16px 28px;
+      border: 2px solid white;
+      border-radius: 7px; }
+      .container .about .boton .button-about .fas {
+        padding-right: 10px; }
+
+.container .contact {
+  padding: 96px 0; }
+  .container .contact .container-contact {
+    width: 90%;
+    margin: auto; }
+    .container .contact .container-contact .h2-contact {
+      font-family: "Montserrat", sans-serif;
+      font-size: 48px;
+      text-align: center;
+      color: #2c3e50; }
+    .container .contact .container-contact .divisor {
+      display: flex;
+      width: 100%;
+      margin: 30px auto;
+      justify-content: center;
+      align-items: center; }
+      .container .contact .container-contact .divisor .estrella {
+        display: inline;
+        font-size: 37px;
+        color: #2c3e50; }
+      .container .contact .container-contact .divisor .vacio {
+        width: 112px;
+        background-color: #2c3e50;
+        height: 4px;
+        border-radius: 2px;
+        margin: 0 10px; }
+    .container .contact .container-contact .form-contact {
+      margin: 0 160px;
+      padding: 0 24px; }
+      .container .contact .container-contact .form-contact .input-form {
+        border-bottom: 1px solid #e9ecef;
+        padding: 0 0 8px; }
+        .container .contact .container-contact .form-contact .input-form input, .container .contact .container-contact .form-contact .input-form textarea {
+          border: none;
+          font-family: "Lato", sans-serif;
+          font-size: 1.5em;
+          height: 100px;
+          padding: 6px 0;
+          color: #212529;
+          width: 100%; }
+        .container .contact .container-contact .form-contact .input-form textarea {
+          text-decoration: none;
+          resize: none;
+          min-height: 192px; }
+      .container .contact .container-contact .form-contact .send-contact {
+        color: white;
+        padding: 16px 28px;
+        background-color: #1abc9c;
+        width: 103px;
+        height: 66px;
+        margin: 0 0 16px;
+        text-align: center;
+        font-size: 20px;
+        font-family: "Lato", sans-serif;
+        border: 1px solid #1abc9c;
+        border-radius: 10px;
+        margin-top: 30px; }
+
+.container .footer {
+  background-color: #2c3e50; }
+  .container .footer .cont-footer {
+    display: flex;
+    text-align: center;
+    padding: 80px 0;
+    width: 90%;
+    margin: auto; }
+    .container .footer .cont-footer h4 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      margin: 0 0 24px;
+      color: white; }
+    .container .footer .cont-footer p {
+      font-size: 20px;
+      font-family: "Lato", sans-serif;
+      color: white; }
+      .container .footer .cont-footer p span {
+        color: #1abc9c; }
+    .container .footer .cont-footer .location {
+      flex: 4;
+      text-align: center;
+      padding: 0 24px; }
+    .container .footer .cont-footer .around {
+      flex: 4;
+      text-align: center;
+      padding: 0 24px; }
+      .container .footer .cont-footer .around .icon-footer a {
+        text-decoration: none;
+        display: inline-block; }
+        .container .footer .cont-footer .around .icon-footer a i {
+          color: white;
+          font-size: 24px;
+          height: 50px;
+          width: 50px;
+          border: 2px solid white;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 4px;
+          padding: 6px 12px; }
+    .container .footer .cont-footer .about-footer {
+      flex: 4;
+      text-align: center;
+      padding: 0 24px; }
+  .container .footer .copyright-footer {
+    text-align: center;
+    background-color: #1a252f;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    padding: 24px 0; }
+
+@media screen and (max-width: 991px) {
+  .container header {
+    height: 74px; }
+    .container header .logo {
+      padding-left: 94px;
+      text-align: start; }
+      .container header .logo a {
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif; }
+    .container header .nav nav ul li {
+      display: none; }
+    .container header .nav nav ul .button-hamburguesa {
+      display: block;
+      margin-right: 94px; }
+  .container .extend-header .principal .titulo-principal {
+    font-size: 44px; }
+  .container .extend-header .principal .subtitulo {
+    font-size: 22px; }
+  .container .main .containerMain .portfolio .h2Portfolio {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif; }
+  .container .main .containerMain .container-row-main {
+    width: 87%;
+    margin: auto; }
+    .container .main .containerMain .container-row-main .image {
+      flex: 50%; }
+  .container .about .headerAbout .h2About {
+    font-size: 36px; }
+  .container .about .containerAbout {
+    width: 76%;
+    margin: auto; }
+    .container .about .containerAbout .p, .container .about .containerAbout .p1 {
+      flex: 100%;
+      margin: 0 0 16px;
+      padding: 0 24px; }
+  .container .contact .container-contact .h2-contact {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif; }
+  .container .contact .container-contact .form-contact {
+    width: 81%;
+    margin: auto; }
+    .container .contact .container-contact .form-contact form .input-form input {
+      font-family: "Lato", sans-serif; }
+  .container .footer .cont-footer {
+    display: block; }
+    .container .footer .cont-footer .location, .container .footer .cont-footer .about-footer, .container .footer .cont-footer .around {
+      width: 80%;
+      margin: 0 auto 48px; } }
+
+@media screen and (max-width: 768px) {
+  .container header {
+    height: 74px; }
+    .container header .logo {
+      padding-left: 94px;
+      text-align: start; }
+      .container header .logo a {
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif; }
+    .container header .nav nav ul li {
+      display: none; }
+    .container header .nav nav ul .button-hamburguesa {
+      display: block;
+      margin-right: 94px; }
+  .container .main .containerMain {
+    width: 67%;
+    margin: auto; }
+    .container .main .containerMain .portfolio .h2Portfolio {
+      font-size: 36px; }
+    .container .main .containerMain .container-row-main .image {
+      flex: 100%; } }

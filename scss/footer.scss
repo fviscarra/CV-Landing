@@ -1,0 +1,71 @@
+@import "./variables";
+
+
+.container {
+    .footer {
+        background-color: $header-color;
+        .cont-footer {
+            display: flex;
+            text-align: center;
+            padding: 80px 0;
+            width: 90%;
+            margin: auto;
+            h4 {
+                font-family: $montserrat;
+                font-size: 24px;
+                margin: 0 0 24px;
+                color: $white;
+            }
+            p {
+                font-size: 20px;
+                font-family: $lato;
+                color: $white;
+                span {
+                    color: $extend-color;
+                }
+            }
+            .location {
+                flex: 4;
+                text-align: center;
+                padding: 0 24px;
+            }
+            .around {
+                flex: 4;
+                text-align: center;
+                padding: 0 24px;
+                .icon-footer {
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                        i {
+                            color: $white;
+                            font-size: 24px;
+                            height: 50px;
+                            width: 50px;
+                            border: 2px solid $white;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 4px;
+                            padding: 6px 12px;
+                        }
+                    }
+                }
+            }
+            .about-footer {
+                flex: 4;
+                text-align: center;
+                padding: 0 24px;
+            }
+        }
+        .copyright-footer {
+            text-align: center;
+            background-color: $footer-color;
+            color: $white;
+            font-family: $lato;
+            font-size: 13px;
+            padding: 24px 0;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+@import "./variables";
+@media screen and (max-width: $Table) { 
+    .container { 
+        header { 
+            height: 74px;
+            .logo {
+                padding-left: 94px;
+                text-align: start;
+                a {
+                    font-size: 20px;
+                    font-family: $montserrat;          
+                }
+            }
+            .nav {
+                nav {
+                    ul {
+                        li {
+                            display: none; 
+                        }
+                        .button-hamburguesa {
+                            display: block;
+                            margin-right: 94px;
+                        }
+                    }
+                }
+            }
+        }
+        .extend-header {
+            .principal {
+                .titulo-principal {
+                    font-size: 44px;
+                }
+                .subtitulo {
+                    font-size: 22px;
+                }
+            }
+        }
+        .main {
+            .containerMain {
+                .portfolio {
+                    .h2Portfolio {
+                        font-size: 36px;
+                        font-family: $montserrat;
+                    }
+                }
+                .container-row-main {
+                    width: 87%;
+                    margin: auto;
+                    .image {
+                        flex: 50%;
+                    }
+                }
+            }
+        }
+        .about {
+            .headerAbout {
+                .h2About {
+                    font-size: 36px;
+                }
+            }
+            .containerAbout {
+                width: 76%;
+                margin: auto;
+                .p, .p1 {
+                    flex: 100%;
+                    margin: 0 0 16px ;
+                    padding: 0 24px;
+                }
+            }
+        }
+        .contact {
+            .container-contact {
+                .h2-contact {
+                    font-size: 36px;
+                    font-family: $montserrat;
+                }
+                .form-contact {
+                    width: 81%;
+                    margin: auto;
+                    form {
+                        .input-form {
+                            input {
+                                font-family: $lato;
+                            }    
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            .cont-footer {
+                display: block;
+                .location, .about-footer, .around {
+                    width: 80%;
+                    margin: 0 auto 48px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: $table) {
+    .container {
+        header {
+            height: 74px;
+            .logo {
+                padding-left: 94px;
+                text-align: start;
+                a {
+                    font-size: 20px;
+                    font-family: $montserrat;          
+                }
+            }
+            .nav {
+                nav {
+                    ul {
+                        li {
+                            display: none; 
+                        }
+                        .button-hamburguesa {
+                            display: block;
+                            margin-right: 94px;
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            .containerMain {
+                width: 67%;
+                margin: auto;
+                .portfolio {
+                    .h2Portfolio {
+                        font-size: 36px;
+                    }
+                }
+                .container-row-main {
+                    .image {
+                        flex: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
