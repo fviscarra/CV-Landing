@@ -103,7 +103,7 @@
         header {
             height: 74px;
             .logo {
-                padding-left: 94px;
+                padding-left: 24px;
                 text-align: start;
                 a {
                     font-size: 20px;
@@ -118,7 +118,7 @@
                         }
                         .button-hamburguesa {
                             display: block;
-                            margin-right: 94px;
+                            margin-right: 24px;
                         }
                     }
                 }
@@ -126,7 +126,7 @@
         }
         .main {
             .containerMain {
-                width: 67%;
+                width: 100%;
                 margin: auto;
                 .portfolio {
                     .h2Portfolio {
@@ -134,9 +134,99 @@
                     }
                 }
                 .container-row-main {
+                    box-sizing: border-box;
+                    margin: auto;
+                    width: 94%;
+                    .image {
+                        flex: 50%; 
+                        width: 312px;
+                        .imagenes {
+                        }
+                    }
+                }
+            }
+        }
+        .about {
+            .containerAbout {
+                display: flex;
+                width: 100%;
+                .p {
+                    flex: 50%;
+                }
+            }
+        }
+        .contact {
+            .container-contact {
+                width: 100%;
+                .form-contact {
+                    width: 94%;
+                    padding: 0 24px;
+                    form {
+                        width: 90%;
+                    } 
+                }  
+            }  
+        }
+        .footer {
+            .cont-footer {
+                width: 90%; 
+                .about-footer {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $mobil) and (max-width: $table)  {
+    .container {
+        header {
+            .logo {
+                padding-left: 16px;
+                flex: 3;
+            }
+            .nav {
+                padding: 10px;
+            }
+        }
+        .main {
+            .containerMain { 
+                .container-row-main {
+                    width: 100%;
                     .image {
                         flex: 100%;
+                        padding: 0 24px;
                     }
+                }
+            }  
+        }
+        .about { 
+            .headerAbout {
+                width: 100%;
+            }
+            .containerAbout {
+                .p {
+                    padding: 0;
+                    flex: 100%;
+                }
+            }
+        }
+        .footer {
+            .cont-footer {
+                .around {
+                    width: 100%;
+                    padding: 0;
+                }
+                .about-footer {
+                    width: 100%;
+                    padding: 0 24px;
+                }
+            }
+            .copyright-footer {
+                .small-footer {
+                    font-size: 12.8px;
+                    font-family: $lato;
                 }
             }
         }
