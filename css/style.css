@@ -92,7 +92,7 @@
       margin: 0;
       padding: 0; } }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 310px) and (max-width: 768px) {
   .container header .logo {
     padding-left: 16px;
     flex: 3; }
@@ -519,7 +519,7 @@
       margin: 0;
       padding: 0; } }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 310px) and (max-width: 768px) {
   .container header .logo {
     padding-left: 16px;
     flex: 3; }
